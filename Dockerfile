@@ -17,7 +17,7 @@ RUN set -ex \
   done
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 5.11.0
+ENV NODE_VERSION 6.11.0
 
 RUN apk add --no-cache binutils-gold curl g++ gcc libgcc libstdc++ linux-headers make paxctl python \
  && curl -sfSL https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}.tar.xz \
