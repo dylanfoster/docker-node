@@ -16,7 +16,7 @@ push:
 
 tag:
 	for tag in $(DOCKER_IMAGE_TAGS); do \
-		docker tag -f $(DOCKER_IMAGE_NAME):$(BUILD_TAG) \
+		docker tag $(DOCKER_IMAGE_NAME):$(BUILD_TAG) \
 		$(DOCKER_IMAGE_NAME):$$tag; \
 	done
 
